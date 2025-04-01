@@ -2,10 +2,10 @@ namespace JugadoresClass;
 
 public abstract class Jugador
 {
-    public double visionJuego;
-    public double visionCompañeros;
-    public double potencia;
-    public double habilidadPases;
+    public double visionJuego=0;
+    public double visionCompañeros=0;
+    public double potencia=0;
+    public double habilidadPases=0;
 
     public virtual double GetPrecision()
     {}

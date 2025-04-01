@@ -2,7 +2,7 @@ namespace JugadoresClass;
 
 public class Atacante: Jugador
 {
-    public double anotacion;
+    public double anotacion=0;
     
     public override double GetPrecision()
     {

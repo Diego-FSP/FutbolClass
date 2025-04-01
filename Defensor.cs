@@ -2,7 +2,7 @@ namespace JugadoresClass;
 
 public class Defensor: Jugador
 {
-    public double quite;
+    public double quite=0;
 
     public override double GetPrecision()
     {
