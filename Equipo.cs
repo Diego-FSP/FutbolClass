@@ -4,11 +4,15 @@ namespace EquipoClass;
 
 public class Equipo
 {
-    public List<Jugador> Jugadores;
-    public List<Sesion> SecionesEntrenamiento;
+    public List<Jugador> Jugadores= {new Atacante(), new Defensor()};
+    public List<Sesion> SecionesEntrenamiento= {new SesionFisica(), new SesionLirica(), new SesionTactica()};
     
     public void Entrenar()
-    {}
+    {
+        foreach(Jugadores j)
+        foreach(SecionesEntrenamiento e)
+        e.AplicarA(j.this);
+    }
 
     public double GetPotencia()
     {
@@ -23,8 +27,17 @@ public class Equipo
     }
 
     public double GetPrecision()
-    {}
+    {
+        double precision=0;
+        foreach(Jugadores j)
+        precision+= 3 * j.GetPrecision() + j.habilidadPases;
+    }
 
     public double GetVision()
-    {}
+    {
+        double suma=0;
+        foreach(Jugadores j)
+        suma+=j.GetVisionGeneral();
+        return suma;
+    }
 }

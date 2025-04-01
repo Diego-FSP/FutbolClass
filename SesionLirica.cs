@@ -3,5 +3,8 @@ namespace SecionesClass;
 
 public class SesionLirica
 {
-    public override void AplicarA(Jugador j);
+    public override void AplicarA(Jugador j)
+    {
+        j.AplicarEntrenamientoLirico();
+    }
 }
