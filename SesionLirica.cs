@@ -1,7 +1,7 @@
 using JugadoresClass;
 namespace SecionesClass;
 
-public class SesionLirica
+public class SesionLirica:Sesion
 {
     public override void AplicarA(Jugador j)
     {

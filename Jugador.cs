@@ -8,10 +8,14 @@ public abstract class Jugador
     public double habilidadPases=0;
 
     public virtual double GetPrecision()
-    {}
+    {
+        return 0;
+    }
 
     public virtual double GetVisionGeneral()
-    {}
+    {
+        return 0;
+    }
 
     public virtual void AplicarEntrenamientoFisico()
     {}
